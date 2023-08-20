@@ -5,24 +5,9 @@ export function middleware(req) {
   let url = req.url;
 
   if (!verify && url.includes("/admin")) {
-    return NextResponse.redirect("http://localhost:3000/");
-  }
-  if (!verify && url.includes("/admin")) {
-    return NextResponse.redirect("http://localhost:3000/");
-  }
-  if (!verify && url.includes("/admin")) {
-    return NextResponse.redirect("http://localhost:3000/");
-  }
-  if (!verify && url.includes("/admin")) {
-    return NextResponse.redirect("http://localhost:3000/");
-  }
-  if (!verify && url.includes("/admin")) {
-    return NextResponse.redirect("http://localhost:3000/");
-  }
-  if (!verify && url.includes("/admin")) {
-    return NextResponse.redirect("http://localhost:3000/");
+    return NextResponse.redirect("https://mern-stack-taager-clone-admin.vercel.app");
   }
   if (verify && url === "http://localhost:3000/") {
-    return NextResponse.redirect("http://localhost:3000/admin/products");
+    return NextResponse.redirect("https://mern-stack-taager-clone-admin.vercel.app/");
   }
 }
