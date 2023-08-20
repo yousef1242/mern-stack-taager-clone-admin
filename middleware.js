@@ -8,6 +8,6 @@ export function middleware(req) {
     return NextResponse.redirect("https://mern-stack-taager-clone-admin.vercel.app");
   }
   if (verify && url === "https://mern-stack-taager-clone-admin.vercel.app") {
-    return NextResponse.redirect("https://mern-stack-taager-clone-admin.vercel.app");
+    return NextResponse.redirect("https://mern-stack-taager-clone-admin.vercel.app/admin/products");
   }
 }
