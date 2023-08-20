@@ -1,0 +1,77 @@
+.productsAdminPage {
+  min-height: 100vh;
+}
+.productsAdminPage .leftDiv {
+  height: 100vh;
+  overflow: scroll;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+.productsAdminPage .leftDiv::-webkit-scrollbar {
+  display: none;
+}
+.productsAdminPage .adminAddproductLink {
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 3px;
+  background-color: var(--green-color);
+  color: #fff;
+  border: 0;
+}
+.productsAdminPage .adminUpdateproductLink {
+  text-decoration: none;
+  padding: 7px;
+  background-color: var(--green-color);
+  margin-top: 5px;
+  display: block;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 0;
+  outline: 0;
+  font-weight: 600;
+  border-radius: 3px;
+  color: #fff;
+  transition: 0.3s;
+}
+.productsAdminPage .adminDeleteproductLink {
+  text-decoration: none;
+  padding: 7px;
+  background-color: var(--green-color);
+  margin-top: 5px;
+  display: block;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 0;
+  outline: 0;
+  font-weight: 600;
+  border-radius: 3px;
+  color: #fff;
+  transition: 0.3s;
+}
+.productsAdminPage .adminTableDiv {
+  overflow: scroll;
+}
+.productsAdminPage .adminTableDiv::-webkit-scrollbar {
+  display: none;
+}
+.productsAdminPage .searchBtn {
+  width: 40%;
+  padding: 10px 0;
+  color: #fff;
+  border-radius: 5px;
+  border: 0;
+  background-color: var(--green-color);
+}
+.productsAdminPage .searchInput {
+  padding: 10px;
+  width: 100%;
+  border: solid 1px #d9dbdf;
+  border-radius: 5px;
+}
+.productsAdminPage .searchInput:focus {
+  border: 1px solid var(--green-color);
+  box-shadow: none;
+  outline: none;
+}

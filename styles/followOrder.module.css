@@ -1,0 +1,32 @@
+.followOrderModelHeader button {
+  margin: 0!important;
+}
+.statusDiv svg{
+    color: #fff;
+    font-size: 20px;
+}
+.statusDiv{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #777;
+    position: relative;
+}
+.greenBg{
+    background-color: var(--green-color);
+}
+.lineStatusNotCancelOrder{
+    position: absolute;
+    height: 87%;
+    width: 1px;
+    border: 1px dotted#777;
+}
+.lineStatusCancelOrder{
+    position: absolute;
+    height: 69%;
+    width: 1px;
+    border: 1px dotted#777;
+}

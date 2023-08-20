@@ -1,0 +1,6 @@
+.adminNavbarBrand{
+    font-size: 30px;
+    color: var(--green-color);
+    text-decoration: none;
+    font-weight: bold;
+}

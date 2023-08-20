@@ -1,0 +1,53 @@
+.usersAdminPage {
+  min-height: 100vh;
+}
+.usersAdminPage .leftDiv {
+  height: 100vh;
+  overflow: scroll;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+.usersAdminPage .leftDiv::-webkit-scrollbar {
+  display: none;
+}
+.usersAdminPage .adminDeleteproductLink {
+  text-decoration: none;
+  padding: 7px;
+  background-color: var(--green-color);
+  margin-top: 5px;
+  display: block;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 0;
+  outline: 0;
+  font-weight: 600;
+  border-radius: 3px;
+  color: #fff;
+  transition: 0.3s;
+}
+.usersAdminPage .adminTableDiv {
+  overflow: scroll;
+}
+.usersAdminPage .adminTableDiv::-webkit-scrollbar {
+  display: none;
+}
+.usersAdminPage .searchBtn {
+  width: 40%;
+  padding: 10px 0;
+  color: #fff;
+  border-radius: 5px;
+  border: 0;
+  background-color: var(--green-color);
+}
+.usersAdminPage .searchInput {
+  padding: 10px;
+  width: 100%;
+  border: solid 1px #d9dbdf;
+  border-radius: 5px;
+}
+.usersAdminPage .searchInput:focus {
+  border: 1px solid var(--green-color);
+  box-shadow: none;
+  outline: none;
+}

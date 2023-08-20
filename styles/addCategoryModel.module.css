@@ -1,0 +1,35 @@
+.addCategoryModelHeader button {
+  margin: 0 !important;
+}
+.formGroup {
+  margin-bottom: 20px;
+}
+.formGroup input {
+  padding: 10px;
+  width: 100%;
+  border: solid 1px #d9dbdf;
+  border-radius: 3px;
+}
+.formGroup label {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.formGroup input:focus {
+  border: 1px solid var(--green-color);
+  outline: none;
+}
+.addCategoryBtn {
+  background-color: var(--green-color);
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  border: 0;
+  border-radius: 3px;
+  transition: 0.3s;
+}

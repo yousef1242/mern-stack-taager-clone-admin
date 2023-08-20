@@ -1,0 +1,72 @@
+.leftDiv {
+  height: 100vh;
+  overflow: scroll;
+  background-color: #fff;
+  padding: 100px 0 50px 0;
+}
+.leftDiv::-webkit-scrollbar {
+  display: none;
+}
+.leftDiv .formDiv {
+  background-color: #fff;
+  box-shadow: 0 0 10px #efefef;
+  width: 700px;
+  padding: 30px;
+  border-radius: 5px;
+}
+.leftDiv .formDiv form label {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.leftDiv .formDiv form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid var(--border-color);
+  outline: 0;
+}
+.leftDiv .formDiv form input:focus,
+.leftDiv .formDiv form .selectCategory:focus {
+  border: 1px solid var(--green-color);
+}
+.leftDiv .formDiv form .selectCategory {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px #efefef;
+  border: 0;
+  outline: 0;
+}
+.leftDiv .formDiv form .updateproductBtn {
+  background-color: var(--green-color);
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  border: 0;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.leftDiv .addImage {
+  display: block;
+  margin-top: 20px;
+  background-color: var(--green-color);
+  border: 0;
+  padding: 10px;
+  border-radius: 3px;
+  color: #fff;
+}
+.leftDiv .trashicon {
+  background-color: var(--green-color);
+  border-radius: 2px;
+  padding: 5px;
+  top: 10px;
+  cursor: pointer;
+  color: #fff;
+  position: absolute;
+  right: 10px;
+}
