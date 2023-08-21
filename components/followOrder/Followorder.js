@@ -114,7 +114,7 @@ const FollowOrder = (props) => {
                             },
                             {
                               headers: {
-                                Authorization: "bearer " + authAdmin?.token,
+                                Authorization: "bearer " +authAdmin?.token,
                               },
                             }
                           );

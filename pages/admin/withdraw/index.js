@@ -78,9 +78,9 @@ const ProductsAdmin = ({ withdraw }) => {
                       </thead>
                       <tbody>
                         {withdrawData?.map((withdraw) => (
-                          <tr key={withdraw._id}>
+                          <tr key={withdraw?._id}>
                             <td style={{ borderBottom: "0px" }}>
-                              {withdraw.userId.username}
+                              {withdraw?.userId?.username}
                             </td>
                             <td style={{ borderBottom: "0px" }}>
                               {withdraw?.amount}
