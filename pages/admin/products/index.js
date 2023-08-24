@@ -27,7 +27,10 @@ const ProductsAdmin = ({ products }) => {
       );
 
       toast.success(data.message);
-      window.location.reload();
+      const filterProducts = productsData?.filter((product) => 
+      product?._id.toString() !== productId
+    );
+    setProductsData(filterProducts);
     } catch (error) {
       console.log(error);
     }

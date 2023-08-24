@@ -26,7 +26,10 @@ const ProductsAdmin = ({ categories }) => {
         }
       );
       toast.success(data.message);
-      window.location.reload();
+      const updatedCategories = categoriesData.filter(
+        (category) => category._id !== categoryId
+      );
+      setcategoriesData(updatedCategories);
     } catch (error) {
       console.log(error);
     }
@@ -46,6 +49,7 @@ const ProductsAdmin = ({ categories }) => {
   useEffect(() => {
     setcategoriesData(categories);
   }, [categories]);
+
   return (
     <>
       <Head>
