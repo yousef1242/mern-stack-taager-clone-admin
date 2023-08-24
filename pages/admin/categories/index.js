@@ -16,10 +16,6 @@ const ProductsAdmin = ({ categories }) => {
   const [addCategoryModal, setAddCategoryModal] = useState(false);
 
   const deleteCategoryFunction = async (categoryId) => {
-    const filterProducts = categoriesData?.filter(
-      (category) => category?._id !== categoryId
-    );
-    setcategoriesData(filterProducts);
     try {
       const { data } = await requestAdmin.delete(
         `/api/categories/delete/${categoryId}`,
@@ -30,6 +26,7 @@ const ProductsAdmin = ({ categories }) => {
         }
       );
       toast.success(data.message);
+      window.location.reload();
     } catch (error) {
       console.log(error);
     }

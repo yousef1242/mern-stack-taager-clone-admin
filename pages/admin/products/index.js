@@ -16,10 +16,6 @@ const ProductsAdmin = ({ products }) => {
   const { authAdmin } = useSelector((state) => state.authAdmin);
 
   const deleteProductFunction = async (productId) => {
-    const filterProducts = productsData?.filter((product) => 
-      product?._id.toString() !== productId
-    );
-    setProductsData(filterProducts);
     try {
       const { data } = await requestAdmin.delete(
         `/api/products/delete/${productId}`,
@@ -31,6 +27,7 @@ const ProductsAdmin = ({ products }) => {
       );
 
       toast.success(data.message);
+      window.location.reload();
     } catch (error) {
       console.log(error);
     }
