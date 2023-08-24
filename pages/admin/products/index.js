@@ -14,10 +14,10 @@ const ProductsAdmin = ({ products }) => {
   const [productsData, setProductsData] = useState([]);
   const [search, setSearch] = useState("");
   const { authAdmin } = useSelector((state) => state.authAdmin);
-  
+
   const deleteProductFunction = async (productId) => {
-    const filterProducts = productsData?.filter(
-      (product) => product?._id !== productId
+    const filterProducts = productsData?.filter((product) => 
+      product?._id.toString() !== productId
     );
     setProductsData(filterProducts);
     try {
@@ -29,6 +29,7 @@ const ProductsAdmin = ({ products }) => {
           },
         }
       );
+
       toast.success(data.message);
     } catch (error) {
       console.log(error);
